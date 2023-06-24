@@ -117,3 +117,1039 @@ h1{
     text-decoration: none;
     border-radius: 100%;
 }
+
+@media (max-width: 640px){
+    *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        line-height: 5em;
+    }
+    ul, ol, li{
+        list-style: none;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 100px 1fr 100px;
+        padding-left: 96px ;
+        padding-right: 96px;
+        
+    }
+    header{
+        text-align: center;
+    }
+    h1{
+        line-height: 3em;
+    }
+    .título1{
+        color: black;
+    }
+    .título2{
+        color: navy;
+    }
+    .galeria{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "f1"
+        "f2"
+        "f3"
+        "f4"
+        "f5"
+        "f6"
+        "f7"
+        "f8";
+        gap: 12px;
+    }
+    .foto{
+        position: relative;
+        background-color: blueviolet;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        height: 700px;
+        width: 100%;
+        border-radius: 05%;
+    }
+    .foto:nth-child(1){
+        grid-area: f1;
+        background-image: url(./img-01/Azaleias.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(2){
+        grid-area: f2;
+        background-image: url(./img-01/Gerbera.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(3){
+        grid-area: f3;
+        background-image: url(./img-01/Girassol.jpeg);
+        background-position: center;
+    }
+    .foto:nth-child(4){
+        grid-area: f4;
+        background-image: url(./img-01/Margarida.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(5){
+        grid-area: f5;
+        background-image: url(./img-01/Narciso.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(6){
+        grid-area: f6;
+        background-image: url(./img-01/Orquídeas.png);
+        background-position: center;
+    }
+    .foto:nth-child(7){
+        grid-area: f7;
+        background-image: url(./img-01/Rosas.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(8){
+        grid-area: f8;
+        background-image: url(./img-01/Tulipas.jpg);
+        background-position: center;
+    }
+    .foto:hover > .foto__info{
+        transform: translateY(0%);
+    }
+    .foto__info{
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        background-color: #0009;
+        color: white;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: 1s;
+    }
+    .action{
+        place-self: center;
+        background-color: navy;
+        width: 120px;
+        height: 50px;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 100%;
+    }
+
+}
+
+@media (max-width: 720px){
+    *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        line-height: 5em;
+    }
+    ul, ol, li{
+        list-style: none;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 100px 1fr 100px;
+        padding-left: 96px ;
+        padding-right: 96px;
+        
+    }
+    header{
+        text-align: center;
+    }
+    h1{
+        line-height: 3em;
+    }
+    .título1{
+        color: black;
+    }
+    .título2{
+        color: navy;
+    }
+    .galeria{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "f1"
+        "f2"
+        "f3"
+        "f4"
+        "f5"
+        "f6"
+        "f7"
+        "f8";
+        gap: 12px;
+    }
+    .foto{
+        position: relative;
+        background-color: blueviolet;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .foto:nth-child(1){
+        grid-area: f1;
+        background-image: url(./img-01/Azaleias.jpg);
+        background-position: top;
+    }
+    .foto:nth-child(2){
+        grid-area: f2;
+        background-image: url(./img-01/Gerbera.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(3){
+        grid-area: f3;
+        background-image: url(./img-01/Girassol.jpeg);
+        background-position: center;
+    }
+    .foto:nth-child(4){
+        grid-area: f4;
+        background-image: url(./img-01/Margarida.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(5){
+        grid-area: f5;
+        background-image: url(./img-01/Narciso.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(6){
+        grid-area: f6;
+        background-image: url(./img-01/Orquídeas.png);
+        background-position: center;
+    }
+    .foto:nth-child(7){
+        grid-area: f7;
+        background-image: url(./img-01/Rosas.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(8){
+        grid-area: f8;
+        background-image: url(./img-01/Tulipas.jpg);
+        background-position: center;
+    }
+    .foto:hover > .foto__info{
+        transform: translateY(0%);
+    }
+    .foto__info{
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        background-color: #0009;
+        color: white;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: 1s;
+    }
+    .action{
+        place-self: center;
+        background-color: navy;
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 100%;
+    }
+
+}
+
+@media (max-width: 750px){
+    *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        line-height: 5em;
+    }
+    ul, ol, li{
+        list-style: none;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 100px 1fr 100px;
+        padding-left: 96px ;
+        padding-right: 96px;
+        
+    }
+    header{
+        text-align: center;
+    }
+    h1{
+        line-height: 3em;
+    }
+    .título1{
+        color: black;
+    }
+    .título2{
+        color: navy;
+    }
+    .galeria{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "f1"
+        "f2"
+        "f3"
+        "f4"
+        "f5"
+        "f6"
+        "f7"
+        "f8";
+        gap: 12px;
+    }
+    .foto{
+        position: relative;
+        background-color: blueviolet;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        height: 700px;
+        width: 100%;
+        border-radius: 05%;
+    }
+    .foto:nth-child(1){
+        grid-area: f1;
+        background-image: url(./img-01/Azaleias.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(2){
+        grid-area: f2;
+        background-image: url(./img-01/Gerbera.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(3){
+        grid-area: f3;
+        background-image: url(./img-01/Girassol.jpeg);
+        background-position: center;
+    }
+    .foto:nth-child(4){
+        grid-area: f4;
+        background-image: url(./img-01/Margarida.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(5){
+        grid-area: f5;
+        background-image: url(./img-01/Narciso.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(6){
+        grid-area: f6;
+        background-image: url(./img-01/Orquídeas.png);
+        background-position: center;
+    }
+    .foto:nth-child(7){
+        grid-area: f7;
+        background-image: url(./img-01/Rosas.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(8){
+        grid-area: f8;
+        background-image: url(./img-01/Tulipas.jpg);
+        background-position: center;
+    }
+    .foto:hover > .foto__info{
+        transform: translateY(0%);
+    }
+    .foto__info{
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        background-color: #0009;
+        color: white;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: 1s;
+    }
+    .action{
+        place-self: center;
+        background-color: navy;
+        width: 120px;
+        height: 50px;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 100%;
+    }
+
+}
+
+@media (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        line-height: 5em;
+    }
+    ul, ol, li{
+        list-style: none;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 100px 1fr 100px;
+        padding-left: 96px ;
+        padding-right: 96px;
+        
+    }
+    header{
+        text-align: center;
+    }
+    h1{
+        line-height: 3em;
+    }
+    .título1{
+        color: black;
+    }
+    .título2{
+        color: navy;
+    }
+    .galeria{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "f1 f1 f1 f1 f1 f2 f2 f2 f3 f3 f3"
+        "f1 f1 f1 f1 f1 f4 f4 f4 f5 f5 f5"
+        "f6 f6 f6 f7 f7 f7 f8 f8 f8 f8 f8";
+        gap: 12px;
+    }
+    .foto{
+        position: relative;
+        background-color: blueviolet;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .foto:nth-child(1){
+        grid-area: f1;
+        background-image: url(./img-01/Azaleias.jpg);
+        background-position: top;
+    }
+    .foto:nth-child(2){
+        grid-area: f2;
+        background-image: url(./img-01/Gerbera.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(3){
+        grid-area: f3;
+        background-image: url(./img-01/Girassol.jpeg);
+        background-position: center;
+    }
+    .foto:nth-child(4){
+        grid-area: f4;
+        background-image: url(./img-01/Margarida.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(5){
+        grid-area: f5;
+        background-image: url(./img-01/Narciso.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(6){
+        grid-area: f6;
+        background-image: url(./img-01/Orquídeas.png);
+        background-position: center;
+    }
+    .foto:nth-child(7){
+        grid-area: f7;
+        background-image: url(./img-01/Rosas.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(8){
+        grid-area: f8;
+        background-image: url(./img-01/Tulipas.jpg);
+        background-position: center;
+    }
+    .foto:hover > .foto__info{
+        transform: translateY(0%);
+    }
+    .foto__info{
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        background-color: #0009;
+        color: white;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: 1s;
+    }
+    .action{
+        place-self: center;
+        background-color: navy;
+        width: 120px;
+        height: 50px;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 100%;
+    }
+
+}
+
+@media (max-width: 1080px){
+        *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        line-height: 5em;
+    }
+    ul, ol, li{
+        list-style: none;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 100px 1fr 100px;
+        padding-left: 96px ;
+        padding-right: 96px;
+        
+    }
+    header{
+        text-align: center;
+    }
+    h1{
+        line-height: 3em;
+    }
+    .título1{
+        color: black;
+    }
+    .título2{
+        color: navy;
+    }
+    .galeria{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "f1"
+        "f2"
+        "f3"
+        "f4"
+        "f5"
+        "f6"
+        "f7"
+        "f8";
+        gap: 12px;
+    }
+    .foto{
+        position: relative;
+        background-color: blueviolet;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        height: 700px;
+        width: 100%;
+        border-radius: 05%;
+    }
+    .foto:nth-child(1){
+        grid-area: f1;
+        background-image: url(./img-01/Azaleias.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(2){
+        grid-area: f2;
+        background-image: url(./img-01/Gerbera.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(3){
+        grid-area: f3;
+        background-image: url(./img-01/Girassol.jpeg);
+        background-position: center;
+    }
+    .foto:nth-child(4){
+        grid-area: f4;
+        background-image: url(./img-01/Margarida.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(5){
+        grid-area: f5;
+        background-image: url(./img-01/Narciso.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(6){
+        grid-area: f6;
+        background-image: url(./img-01/Orquídeas.png);
+        background-position: center;
+    }
+    .foto:nth-child(7){
+        grid-area: f7;
+        background-image: url(./img-01/Rosas.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(8){
+        grid-area: f8;
+        background-image: url(./img-01/Tulipas.jpg);
+        background-position: center;
+    }
+    .foto:hover > .foto__info{
+        transform: translateY(0%);
+    }
+    .foto__info{
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        background-color: #0009;
+        color: white;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: 1s;
+    }
+    .action{
+        place-self: center;
+        background-color: navy;
+        width: 120px;
+        height: 50px;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 100%;
+    }
+
+}
+
+@media (max-width: 1440px){
+    *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        line-height: 5em;
+    }
+    ul, ol, li{
+        list-style: none;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 100px 1fr 100px;
+        padding-left: 96px ;
+        padding-right: 96px;
+        
+    }
+    header{
+        text-align: center;
+    }
+    h1{
+        line-height: 3em;
+    }
+    .título1{
+        color: black;
+    }
+    .título2{
+        color: navy;
+    }
+    .galeria{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "f1"
+        "f2"
+        "f3"
+        "f4"
+        "f5"
+        "f6"
+        "f7"
+        "f8";
+        gap: 12px;
+    }
+    .foto{
+        position: relative;
+        background-color: blueviolet;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        height: 700px;
+        width: 100%;
+        border-radius: 05%;
+    }
+    .foto:nth-child(1){
+        grid-area: f1;
+        background-image: url(./img-01/Azaleias.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(2){
+        grid-area: f2;
+        background-image: url(./img-01/Gerbera.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(3){
+        grid-area: f3;
+        background-image: url(./img-01/Girassol.jpeg);
+        background-position: center;
+    }
+    .foto:nth-child(4){
+        grid-area: f4;
+        background-image: url(./img-01/Margarida.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(5){
+        grid-area: f5;
+        background-image: url(./img-01/Narciso.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(6){
+        grid-area: f6;
+        background-image: url(./img-01/Orquídeas.png);
+        background-position: center;
+    }
+    .foto:nth-child(7){
+        grid-area: f7;
+        background-image: url(./img-01/Rosas.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(8){
+        grid-area: f8;
+        background-image: url(./img-01/Tulipas.jpg);
+        background-position: center;
+    }
+    .foto:hover > .foto__info{
+        transform: translateY(0%);
+    }
+    .foto__info{
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        background-color: #0009;
+        color: white;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: 1s;
+    }
+    .action{
+        place-self: center;
+        background-color: navy;
+        width: 120px;
+        height: 50px;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 100%;
+    }
+
+}
+
+@media (max-width: 2160px){
+    *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        line-height: 5em;
+    }
+    ul, ol, li{
+        list-style: none;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 100px 1fr 100px;
+        padding-left: 96px ;
+        padding-right: 96px;
+        
+    }
+    header{
+        text-align: center;
+    }
+    h1{
+        line-height: 3em;
+    }
+    .título1{
+        color: black;
+    }
+    .título2{
+        color: navy;
+    }
+    .galeria{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "f1"
+        "f2"
+        "f3"
+        "f4"
+        "f5"
+        "f6"
+        "f7"
+        "f8";
+        gap: 12px;
+    }
+    .foto{
+        position: relative;
+        background-color: blueviolet;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        height: 700px;
+        width: 100%;
+        border-radius: 05%;
+    }
+    .foto:nth-child(1){
+        grid-area: f1;
+        background-image: url(./img-01/Azaleias.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(2){
+        grid-area: f2;
+        background-image: url(./img-01/Gerbera.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(3){
+        grid-area: f3;
+        background-image: url(./img-01/Girassol.jpeg);
+        background-position: center;
+    }
+    .foto:nth-child(4){
+        grid-area: f4;
+        background-image: url(./img-01/Margarida.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(5){
+        grid-area: f5;
+        background-image: url(./img-01/Narciso.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(6){
+        grid-area: f6;
+        background-image: url(./img-01/Orquídeas.png);
+        background-position: center;
+    }
+    .foto:nth-child(7){
+        grid-area: f7;
+        background-image: url(./img-01/Rosas.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(8){
+        grid-area: f8;
+        background-image: url(./img-01/Tulipas.jpg);
+        background-position: center;
+    }
+    .foto:hover > .foto__info{
+        transform: translateY(0%);
+    }
+    .foto__info{
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        background-color: #0009;
+        color: white;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: 1s;
+    }
+    .action{
+        place-self: center;
+        background-color: navy;
+        width: 120px;
+        height: 50px;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 100%;
+    }
+
+}
+
+@media (max-width: 4320px){
+    *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+        line-height: 5em;
+    }
+    ul, ol, li{
+        list-style: none;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 100px 1fr 100px;
+        padding-left: 96px ;
+        padding-right: 96px;
+        
+    }
+    header{
+        text-align: center;
+    }
+    h1{
+        line-height: 3em;
+    }
+    .título1{
+        color: black;
+    }
+    .título2{
+        color: navy;
+    }
+    .galeria{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "f1"
+        "f2"
+        "f3"
+        "f4"
+        "f5"
+        "f6"
+        "f7"
+        "f8";
+        gap: 12px;
+    }
+    .foto{
+        position: relative;
+        background-color: blueviolet;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        height: 700px;
+        width: 100%;
+        border-radius: 05%;
+    }
+    .foto:nth-child(1){
+        grid-area: f1;
+        background-image: url(./img-01/Azaleias.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(2){
+        grid-area: f2;
+        background-image: url(./img-01/Gerbera.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(3){
+        grid-area: f3;
+        background-image: url(./img-01/Girassol.jpeg);
+        background-position: center;
+    }
+    .foto:nth-child(4){
+        grid-area: f4;
+        background-image: url(./img-01/Margarida.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(5){
+        grid-area: f5;
+        background-image: url(./img-01/Narciso.jpg);
+        background-position: center;
+    }
+    .foto:nth-child(6){
+        grid-area: f6;
+        background-image: url(./img-01/Orquídeas.png);
+        background-position: center;
+    }
+    .foto:nth-child(7){
+        grid-area: f7;
+        background-image: url(./img-01/Rosas.jpg);
+        background-position: center;
+    
+    }
+    .foto:nth-child(8){
+        grid-area: f8;
+        background-image: url(./img-01/Tulipas.jpg);
+        background-position: center;
+    }
+    .foto:hover > .foto__info{
+        transform: translateY(0%);
+    }
+    .foto__info{
+        position: absolute;
+        width: 100%;
+        height: 64px;
+        background-color: #0009;
+        color: white;
+        bottom: 0;
+        transform: translateY(100%);
+        transition: 1s;
+    }
+    .action{
+        place-self: center;
+        background-color: navy;
+        width: 120px;
+        height: 50px;
+        color: #fff;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 100%;
+    }
+}
